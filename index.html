@@ -14,26 +14,29 @@
 <body data-menu>
     <aside class="aside" data-menu>
         <div class="aside-wrapper">
-            <span class="aside-logo | accent-clr" data-menu>ljr</span>
-            <nav class="navigation">
-                <ul class="navigation-list" data-nav-buttons>
-                    <li ><button class="navigation-list__button | active" data-nav-button>Home</button></li>
-                    <li><button class="navigation-list__button" data-nav-button>Conhecimento</button></li>
-                    <!-- <li><button class="navigation-list__button" data-nav-button>Experiência</button></li> -->
-                    <li><button class="navigation-list__button" data-nav-button>Projetos</button></li>
+            <a href="#" class="accent-clr aside-logo" data-menu>
+                ‹<span class="aside-logo__text">ljr</span>/›
+            </a>
+            <div class="nav-wrapper">
+                <nav class="navigation">
+                    <ul class="navigation-list" data-nav-buttons>
+                        <li ><button class="navigation-list__button | active" data-nav-button>Home</button></li>
+                        <li><button class="navigation-list__button" data-nav-button>Conhecimento</button></li>
+                        <li><button class="navigation-list__button" data-nav-button>Projetos</button></li>
+                    </ul>
+                </nav>
+                <ul class="social-links">
+                    <li>
+                        <a href="" target="_blank"><img src="images/whatsapp-icon.png" alt="whatsapp"></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Levy-Jr" target="_blank"><img src="images/github-icon.png" alt="github"></a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank"><img src="images/instagram-icon.png" alt="instagram"></a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="social-links">
-                <li>
-                    <a href="" target="_blank"><img src="images/whatsapp-icon.png" alt="whatsapp"></a>
-                </li>
-                <li>
-                    <a href="https://github.com/Levy-Jr" target="_blank"><img src="images/github-icon.png" alt="github"></a>
-                </li>
-                <li>
-                    <a href="" target="_blank"><img src="images/instagram-icon.png" alt="instagram"></a>
-                </li>
-            </ul>
+            </div>
         </div>
     </aside>
     <main class="main" data-main>
@@ -86,32 +89,44 @@
             </div>
         </section>
 
-<!--         <section class="section-experience | container" data-section>
-            <div class="experience-header">
-                <h1 class="experience-header__title">Experiência</h1>
-            </div>
-            <div class="experience-content">
-                <img class="experience-content__img" src="images/knowledge-illustration.png" alt="">
-                <p>
-                    Tenho mais de 2 anos de experiência em programação, adquiri habilidades sólidas em HTML, CSS e JavaScript. Essas três tecnologias formam a base para o desenvolvimento de sites e aplicativos web modernos e eficientes.
-                </p>
-            </div>
-        </section> -->
-
         <section class="section-projects | container" data-section>
             <h1 class="projects__title">Projetos</h1>
             <ul class="projects-wrapper">
-                <li>
-
+                <li class="project">
+                    <a class="project__image-wrapper" href="https://levy-jr.github.io/loopstudios-vr-landing-page/" target="_blank">
+                        <img src="images/loopstudios-vr-landing-page.png" alt="vr landing page header">
+                    </a>
+                    <h3 class="project__title">Realidade Virtual</h3>
+                    <p class="project__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis accusamus inventore blanditiis fuga temporibus vero placeat sit architecto quis ab ex quod repellendus mollitia quo sequi voluptates, vel eaque?
+                    </p>
                 </li>
-                <li>
-
+                <li class="project">
+                    <a class="project__image-wrapper" href="https://levy-jr.github.io/Book-Mark-Landing-Page/" target="_blank">
+                        <img src="images/Book-Mark-Landing-Page.png" alt="bookmark landing page header">
+                    </a>
+                    <h3 class="project__title">Marca Páginas</h3>
+                    <p class="project__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis accusamus inventore blanditiis fuga temporibus vero placeat sit architecto quis ab ex quod repellendus mollitia quo sequi voluptates, vel eaque?
+                    </p>
                 </li>
-                <li>
-
+                <li class="project">
+                    <a class="project__image-wrapper" href="https://levy-jr.github.io/landing-page-for-a-sunnyside-agency/" target="_blank">
+                        <img src="images/landing-page-for-a-sunnyside-agency.png" alt="sunnyside agency landing page header">
+                    </a>
+                    <h3 class="project__title">Agência de Sol</h3>
+                    <p class="project__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis accusamus inventore blanditiis fuga temporibus vero placeat sit architecto quis ab ex quod repellendus mollitia quo sequi voluptates, vel eaque?
+                    </p>
                 </li>
-                <li>
-                    
+                <li class="project">
+                    <a href="https://levy-jr.github.io/E-commerce-product-page/" target="_blank" class="project__image-wrapper">
+                        <img src="images/E-commerce-product-page.png" alt="e commerce product page">
+                    </a>
+                    <h3 class="project__title">Produto de uma Página E-commerce</h3>
+                    <p class="project__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe reiciendis accusamus inventore blanditiis fuga temporibus vero placeat sit architecto quis ab ex quod repellendus mollitia quo sequi voluptates, vel eaque?
+                    </p>
                 </li>
             </ul>
         </section>
