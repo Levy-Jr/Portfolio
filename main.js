@@ -7,13 +7,17 @@ mobileButton.addEventListener('click', () => {
 	visibleElements.forEach(e => e.toggleAttribute('data-visible'))
 })
 
-const changeActiveButton = (button) => {
+const changeActiveButton = (button, li) => {
   const navButtonsParent = document.querySelector('[data-nav-buttons]')
-	const activeButton = navButtonsParent.querySelector('.active')
+
+	const activeButton = navButtonsParent.querySelectorAll('.active')
 	if(activeButton) {
-		activeButton.classList.remove('active')
+		activeButton.forEach(button => {
+			button.classList.remove('active')
+		})
 	}
 
+	li.classList.add('active')
 	button.classList.add('active')
 	visibleElements.forEach(e => e.toggleAttribute('data-visible'))
 }
@@ -32,7 +36,7 @@ const navButtons = document.querySelectorAll('[data-nav-button]')
 
 navButtons.forEach((button, index) => {
 	button.addEventListener('click', () => {
-		changeActiveButton(button)
+		changeActiveButton(button, button.closest('.navigation-list__li'))
 		changeSection(index)
 	})
 })
