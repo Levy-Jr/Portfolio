@@ -727,6 +727,7 @@ button {
 
 .contact {
   display: none;
+  text-decoration: none;
 }
 
 @media (min-width: 56.25em) {

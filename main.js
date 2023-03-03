@@ -40,3 +40,30 @@ navButtons.forEach((button, index) => {
 		changeSection(index)
 	})
 })
+
+/* project button */
+
+const projectBtn = document.querySelectorAll('[data-project-btn]')
+
+projectBtn.forEach(button => {
+	button.addEventListener('click', () => {
+		const sectionParents = document.querySelector('[data-main]')
+		const activeSection = sectionParents.querySelector('[data-section].active')
+		if(activeSection) {
+			activeSection.classList.remove('active')
+		}
+	
+		document.querySelector('.section-projects').classList.add('active')
+
+		const navButtonsParent = document.querySelector('[data-nav-buttons]')
+		const activeButton = navButtonsParent.querySelectorAll('.active')
+		if(activeButton) {
+			activeButton.forEach(button => {
+				button.classList.remove('active')
+			})
+		}
+
+		navButtonsParent.querySelector('.project__li').classList.add('active')
+		navButtonsParent.querySelector('.project-nav__button').classList.add('active')
+	})
+})
