@@ -422,7 +422,7 @@ body::-webkit-scrollbar-track {
 
 .home-content p {
   color: var(--neutral-200);
-  margin-block: 1rem 4rem;
+  margin-block: 1rem 3rem;
 }
 
 @media (min-width: 56.25em) {
@@ -726,7 +726,6 @@ button {
 }
 
 .contact {
-  display: none;
   text-decoration: none;
 }
 
@@ -738,12 +737,28 @@ button {
 
 .home-content-buttons {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  gap: .5rem;
 }
 
 .knowledge-content-buttons {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 26.563rem) {
+  .home-content-buttons, .knowledge-content-buttons {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 56.25em){
+.home-content-buttons {
+  flex-direction: row;
+  gap: 2rem;
+}
 }
 
 /* utlity classes */
